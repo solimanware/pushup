@@ -1,0 +1,7 @@
+{
+  "name": "pushup",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
