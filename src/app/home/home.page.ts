@@ -9,6 +9,8 @@ import { NativeAudio } from '@ionic-native/native-audio/ngx';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
+  motivationWord = "يلا"
+  motivationColor = "red"
 
   constructor(private sensors: Sensors, private nativeAudio: NativeAudio) { }
 
@@ -30,6 +32,8 @@ export class HomePage implements OnInit {
       if (res[0] === 0) {
         console.log('you are close');
         this.nativeAudio.play('3ash');
+        this.motivationWord = "عااااش"
+        this.motivationColor = "green"
 
       }
     })
